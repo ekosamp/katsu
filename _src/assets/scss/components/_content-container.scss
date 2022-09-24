@@ -1,0 +1,13 @@
+.content-container {
+  display: flex;
+  justify-content: flex-end;
+
+  > .main {
+    @include viewport-9 {
+      max-width: 504px;
+    }
+    @include viewport-12 {
+      max-width: 744px;
+    }
+  }
+}

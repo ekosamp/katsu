@@ -1,0 +1,27 @@
+extends ../layouts/default.pug
+block vars
+  - var title = "Katrina Surla – Advertising Account Management"
+  - var description = "Skilled in campaign development, Client-Agency and personal relations, and time management, I have a good three-year experience handling various brands — from face and skin care to fashion, and real estate. I manage daily communications making sure Agency and Client objectives and expectations are met in time. Aside from business growth, I am equally interested in leadership growth where I can share my work experience and learn at the same time."
+  - var image = "http://katrinasurla.com/assets/images/katrina-surla-share.jpg"
+  - var currentPath = "http://katrinasurla.com/"
+block content
+  .content-container
+    section.main
+      header.overview-section
+        .title
+          .header-title
+            h1.title katrina surla
+            h4.caption.-muted advertising account management • campaign development • client-agency relations
+        .image
+          figure.image-section
+            img(class="image" src="assets/images/katrina-surla.jpg" alt="Katrina Surla")
+        .description
+          p Skilled in campaign development, Client-Agency and personal relations, and time management, I have a good three-year experience handling various brands — from face and skin care to fashion, and real estate.
+          p I manage daily communications making sure Agency and Client objectives and expectations are met in time. Aside from business growth, I am equally interested in leadership growth where I can share my work experience and learn at the same time.
+        .actions
+          a(class="btn btn-component -primary gt-send-message" href="mailto:surlakatrina@gmail.com") Send me a message
+          a(class="btn btn-component gt-download-cv" alt="Download my resume" href="assets/files/katrina-surla-resume-cv.pdf" download="katrina-surla-resume-cv.pdf") Download my CV
+      section.header-content-section
+        include brands-section.pug
+      section.header-content-section
+        include experience-section.pug
